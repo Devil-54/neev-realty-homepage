@@ -1,0 +1,25 @@
+.mega-footer {
+  background: linear-gradient(to right, #1a0f2e, #2c1639);
+  color: #ccc;
+  padding: 60px 20px;
+}
+
+.mega-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.mega-footer h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.mega-footer ul {
+  list-style: none;
+}
+
+.mega-footer li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}

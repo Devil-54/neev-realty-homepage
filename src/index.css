@@ -1,0 +1,98 @@
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --primary: #f5b400;
+  --dark: #111;
+  --text: #555;
+  --bg: #f9fafb;
+  --white: #ffffff;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ===== ROOT LAYOUT ===== */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== SECTION ===== */
+section {
+  padding: 100px 20px;
+}
+
+/* ===== LIGHT BG ===== */
+.bg-light {
+  background: var(--bg);
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ===== TEXT ===== */
+p {
+  font-size: 15px;
+  color: var(--text);
+}
+
+/* ===== BUTTON ===== */
+button {
+  padding: 12px 20px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== IMAGE ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}

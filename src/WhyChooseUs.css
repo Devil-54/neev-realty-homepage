@@ -1,0 +1,52 @@
+/* ===== WHY SECTION ===== */
+.why {
+  background: var(--bg);
+  text-align: center;
+}
+
+/* ===== GRID ===== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* ===== CARD ===== */
+.why-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== ICON ===== */
+.icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* ===== TITLE ===== */
+.why-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+/* ===== TEXT ===== */
+.why-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}

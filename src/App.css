@@ -1,0 +1,141 @@
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --primary: #f5b400; /* 🔥 Figma yellow */
+  --dark: #111;
+  --text: #555;
+  --bg: #f9fafb;
+  --white: #ffffff;
+}
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff; /* ❌ removed gradient */
+  color: var(--dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== ROOT (LAYOUT FIX) ===== */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  flex: 1;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1280px; /* 🔥 wider layout */
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== SECTION ===== */
+section {
+  padding: 100px 20px; /* 🔥 better spacing */
+}
+
+/* ===== LIGHT BACKGROUND SECTION ===== */
+.bg-light {
+  background: var(--bg);
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* 🔥 Underline effect */
+h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== TEXT ===== */
+p {
+  color: var(--text);
+  font-size: 15px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  font-family: inherit;
+  padding: 12px 22px;
+  border: none;
+  background: var(--primary); /* ❌ removed gradient */
+  color: var(--white);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== IMAGE ===== */
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== CARD (🔥 NEW - IMPORTANT) ===== */
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== FLEX UTIL (🔥 OPTIONAL) ===== */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
