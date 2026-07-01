@@ -1,16 +1,87 @@
-# React + Vite
+# Neev Realty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and polished real estate landing page built with React and Vite, inspired by a Figma design. This project showcases a sleek homepage experience with sections for property highlights, services, developer partners, blog content, statistics, and a complete footer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive hero section with a strong call-to-action
+- Featured properties showcase
+- Why choose us section
+- Developer and partner highlights
+- Blog section for real estate insights
+- Statistics section for trust and credibility
+- Professional footer and mega footer layout
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- CSS3
+- JavaScript
+- ESLint
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+   ```bash
+   git clone https://github.com/Devil-54/neev-realty-homepage.git
+   ```
+2. Navigate to the project directory
+   ```bash
+   cd neev-realty-homepage
+   ```
+3. Install dependencies
+   ```bash
+   npm install
+   ```
+
+## Run Commands
+
+- Start the development server
+  ```bash
+  npm run dev
+  ```
+- Build for production
+  ```bash
+  npm run build
+  ```
+- Preview the production build
+  ```bash
+  npm run preview
+  ```
+
+## Folder Structure
+
+```text
+src/
+  App.jsx
+  Hero.jsx
+  Properties.jsx
+  WhyChooseUs.jsx
+  Developers.jsx
+  Blog.jsx
+  Stats.jsx
+  MegaFooter.jsx
+  Footer.jsx
+  assets/
+  *.css
+public/
+package.json
+vite.config.js
+```
+
+## Future Improvements
+
+- Add animation and micro-interactions
+- Integrate dynamic property listings
+- Connect the contact and newsletter forms to a backend
+- Add multi-page routing for deeper browsing experience
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Developed by Devil-54
+- GitHub: https://github.com/Devil-54
